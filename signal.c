@@ -24,7 +24,7 @@ static void sighandler (int signo){
 int main(){
   signal(SIGINT,sighandler);
   signal(SIGUSR1,sighandler);
-while(1){
+  while(1){
     printf("Current PID: %d\n",getpid());
     sleep(1);
   }
